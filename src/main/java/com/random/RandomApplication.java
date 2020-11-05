@@ -18,7 +18,7 @@ public class RandomApplication {
 
 		PersonaService serv = context.getBean(PersonaService.class);
 		
-		crearArchivo( serv.generate(), new File("C:/Users/KGB/Desktop/@Dfadb/ar.txt"));
+		crearArchivo( serv.fechas(), new File("C:/Users/KGB/Desktop/@Dfadb/fechasg.txt"));
 		/*crearArchivo( serv.generate02(), new File("C:/Users/KGB/Desktop/@Dfadb/ar02.txt"));
 		crearArchivo( serv.generate03(), new File("C:/Users/KGB/Desktop/@Dfadb/ar03.txt"));
 		crearArchivo( serv.generate04(), new File("C:/Users/KGB/Desktop/@Dfadb/ar04.txt"));*/

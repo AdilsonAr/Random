@@ -70,6 +70,61 @@ public class PersonaService {
 		return sql;
 	}
 	
+	public String fechas() {
+		String sql="insert into Dim_tiempo values: ";
+		int ct=1;
+		for (int i=0;i<12;i++) {
+			int it=0;
+			
+			switch (i) {
+			case 0:
+				it=31;
+				break;
+			case 1:
+				it=29;
+				break;
+				
+			case 2:
+				it=31;
+				break;
+				
+			case 3:
+				it=30;
+				break;
+			case 4:
+				it=31;
+				break;
+			case 5:
+				it=30;
+				break;
+			case 6:
+				it=31;
+				break;
+			case 7:
+				it=31;
+				break;
+			case 8:
+				it=30;
+				break;
+			case 9:
+				it=31;
+				break;
+			case 10:
+				it=30;
+				break;
+			case 11:
+				it=31;
+				break;
+			}
+			for (int j=0;j<it;j++) {
+				sql+="("+ct+",'2020-"+(i+1)+"-"+(j+1)+"',"+2020+","+(i+1)+","+(j+1)+"),\n";
+				ct++;
+			}
+		}
+		
+		return sql;
+	}
+	
 	public String generate03() {
 
 		String sql = "insert into consulta values ";
